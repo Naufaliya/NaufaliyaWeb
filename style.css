@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* Ini kode kamu yang sudah ada */
+}
+/* --- Reset & Base --- */
+:root {
+    --primary-color: #3b82f6; /* Blue Branding */
+    --bg-dark: #000000;
+    --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* 10px = 1rem */
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: var(--bg-dark);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* --- Header & Navbar --- */
+.navbar {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 120rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4rem;
+    border-radius: 5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    transition: 0.3s ease;
+}
+
+/* Efek Tombol Aktif (Biru) */
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 0 1.5rem var(--primary-color);
+}
+
+/* --- Section General --- */
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 5rem;
+}
+
+/* --- Home Section --- */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.home-content h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1 span {
+    color: var(--primary-color);
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    max-width: 50rem;
+}
+
+.home-img img {
+    width: 30vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem var(--primary-color);
+    transition: 0.4s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.02);
+}
+
+/* --- Social Icons & Buttons --- */
+.social-icons {
+    margin: 2.5rem 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 0.2rem solid var(--primary-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--primary-color);
+    margin-right: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    color: black;
+    box-shadow: 0 0 2rem var(--primary-color);
+    transform: translateY(-0.5rem);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: transparent;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: black;
+    box-shadow: 0 0 2rem var(--primary-color);
+}
+
+/* --- Projects Section --- */
+.projects {
+    background: radial-gradient(circle at top right, #02045d, #000);
+}
+
+.projects h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.6rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 4rem;
+    color: #bbb;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    transition: 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-1rem);
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 1.4rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 995px) {
+    .navbar { padding: 1.2rem 2rem; }
+    .home { flex-direction: column-reverse; text-align: center; gap: 4rem; }
+    .home-content h1 { font-size: 4rem; }
+    .home-img img { width: 60vw; }
+    .home-content p { margin: 0 auto; }
+}
+  
+/* Styling Khusus About */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img img {
+    width: 35vw;
+    border-radius: 20px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 20px 20px 0px var(--primary-color); /* Efek bayangan tegas agar estetik */
+    transition: 0.3s ease;
+}
+
+.about-img img:hover {
+    box-shadow: 10px 10px 0px var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* Styling List Skill */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.skill-item {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Responsif Mobile */
+@media (max-width: 995px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    .about-img img {
+        width: 70vw;
+    }
+    .skills-list {
+        justify-content: center;
+    }
+}
+
+/* Kita besarkan standarnya */
+.home-content h1 {
+    font-size: 7rem; /* Dari 5rem, biar beneran 'bold' */
+    line-height: 1.1;
+}
+
+.home-content p, 
+.about-text p {
+    font-size: 2.2rem; /* Dari 1.6rem, sekarang setara 22px */
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-top: 2.5rem;
+}
+
+.about-text h2 {
+    font-size: 6rem; /* Judul About Me jadi lebih megah */
+    font-weight: 700;
+}
+
+/* Ukuran Menu Navbar juga kita naikkan biar jelas */
+.navbar ul li a {
+    font-size: 1.8rem; 
+    padding: 1rem 2.5rem;
+}
+
+.auto-type {
+    color: var(--primary-color); /* Beri warna biru branding kamu */
+    font-weight: 700;
+}
+
+/* Mengatur gaya kursor ketikan */
+.typed-cursor {
+    font-size: 3.5rem; /* Sesuaikan dengan ukuran teks kamu */
+    color: white;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
