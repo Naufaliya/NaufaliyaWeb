@@ -327,7 +327,6 @@ section {
     .skills-list {
         justify-content: center;
     }
-}
 
 /* Kita besarkan standarnya */
 .home-content h1 {
@@ -418,4 +417,39 @@ section {
     display: block;
     width: 100%;
     text-transform: none; /* Biar gak otomatis kapital kalau kamu gak mau */
+}
+
+@media (max-width: 995px) {
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+    .navbar ul {
+        gap: 0.3rem;
+    }
+    .navbar ul li a {
+        font-size: 1.3rem;
+        padding: 0.7rem 1.2rem;
+    }
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+    .home-content p,
+    .about-text p {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+    .about-text h2 {
+        font-size: 3rem;
+    }
+    .heading,
+    #about h2 {
+        font-size: 2.6rem;
+    }
+    .spotify-title {
+        font-size: 2.6rem !important;
+        margin-top: 4rem;
+    }
+    .about-card {
+        padding: 2.5rem 2rem;
+    }
 }
