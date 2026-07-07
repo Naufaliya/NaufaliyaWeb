@@ -95,6 +95,10 @@ section {
 
 /* --- Home Section --- */
 .home {
+    background: radial-gradient(circle at top right, #02045d, #000);
+}
+
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,6 +184,7 @@ section {
 }
 
 /* --- Projects Section --- */
+
 .projects {
     background: radial-gradient(circle at top right, #02045d, #000);
 }
@@ -245,30 +250,27 @@ section {
 }
   
 /* Styling Khusus About */
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8rem;
+
+.about {
+    background: radial-gradient(circle at top right, #02045d, #000);
 }
+
+.about-card {
+    background: rgba(255, 255, 255, 0.05); /* Putih tipis banget */
+    backdrop-filter: blur(10px); /* Efek blur kaca */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Garis tepi tipis */
+    padding: 4rem;
+    border-radius: 3rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
 
 .about-text {
     flex: 1;
 }
 
-.about-img {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.about-img img {
-    width: 35vw;
-    border-radius: 20px;
-    border: 3px solid var(--primary-color);
-    box-shadow: 20px 20px 0px var(--primary-color); /* Efek bayangan tegas agar estetik */
-    transition: 0.3s ease;
-}
 
 .about-img img:hover {
     box-shadow: 10px 10px 0px var(--primary-color);
@@ -295,9 +297,25 @@ section {
 
 /* Responsif Mobile */
 @media (max-width: 995px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
+    /* Ganti .about-container kamu dengan ini */
+.about-container {
+    display: block; /* Biar gak tabrakan sama kolom foto */
+    width: 100%;
+    max-width: 100rem; /* Biar kotak gak lebar banget sampe ujung layar */
+    margin: 0 auto;
+}
+
+/* Update .about-card biar lega */
+.about-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    padding: 5rem; /* Tambahin padding biar lega */
+    border-radius: 4rem;
+    width: 100%;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+}
     }
     .about-img {
         justify-content: center;
@@ -353,4 +371,51 @@ section {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* Judul Section */
+
+.spotify-wrapper {
+    margin: 3rem auto; /* Ini kunci buat naruh box-nya di tengah (atas-bawah 3rem, kiri-kanan auto) */
+    max-width: 900px;  /* Sesuaikan lebarnya biar pas sama grid kamu */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ini buat naruh judul h3 ke tengah */
+    width: 100%;
+}
+
+.spotify-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%; /* Biar dia menempati seluruh lebar wrapper */
+}
+
+/* Biar kalau dibuka di HP gak maksa 2 kolom (nanti kekecilan) */
+@media (max-width: 768px) {
+    .spotify-grid {
+        grid-template-columns: 1fr; /* Balik jadi 1 kolom kalau di HP */
+    }
+}
+
+/* Untuk judul My Projects dan About Me */
+.heading, 
+#about h2 {
+    font-size: 4rem; /* Sesuaikan dengan ukuran 'I love' kamu */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Untuk judul My Favorite Songs */
+.spotify-title {
+    font-size: 4rem !important; /* Samakan dengan About Me (6rem) */
+    font-weight: 800;
+    text-align: center;
+    margin-top: 8rem; /* Kasih jarak atas biar gak nempel kotak about */
+    margin-bottom: 4rem;
+    color: white;
+    display: block;
+    width: 100%;
+    text-transform: none; /* Biar gak otomatis kapital kalau kamu gak mau */
 }
