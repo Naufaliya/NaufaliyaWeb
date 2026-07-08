@@ -46,56 +46,41 @@
     margin-top: 3rem;
 }
 
+
 .kotakpython {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 0.8rem;
 }
 
 .kotakhtml {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 0.8rem;
 }
 
 .kotakcss {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 0.8rem;
 }
 
 .kotakjs {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 0.8rem;
 }
 
 .kotakc {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 0.8rem;
 }
 
 .kotakcplus {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.1rem;
+    border-radius: 0.8rem;
 }
+
+/* dst buat kotakcss, kotakjs, kotakc, kotakcplus */
