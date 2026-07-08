@@ -87,6 +87,8 @@ body {
     box-shadow: 0 0 1.5rem var(--primary-color);
 }
 
+
+
 /* --- Section General --- */
 section {
     min-height: 100vh;
@@ -419,37 +421,102 @@ section {
     text-transform: none; /* Biar gak otomatis kapital kalau kamu gak mau */
 }
 
-@media (max-width: 995px) {
-    .navbar {
-        padding: 1rem 1.5rem;
-    }
-    .navbar ul {
-        gap: 0.3rem;
-    }
-    .navbar ul li a {
-        font-size: 1.3rem;
-        padding: 0.7rem 1.2rem;
-    }
-    .home-content h1 {
-        font-size: 3.5rem;
-    }
-    .home-content p,
-    .about-text p {
-        font-size: 1.5rem;
-        line-height: 1.7;
-    }
-    .about-text h2 {
-        font-size: 3rem;
-    }
-    .heading,
-    #about h2 {
-        font-size: 2.6rem;
-    }
-    .spotify-title {
-        font-size: 2.6rem !important;
-        margin-top: 4rem;
-    }
-    .about-card {
-        padding: 2.5rem 2rem;
-    }
+
+.about-text p {
+    margin-bottom: 1.8rem; /* jarak antar paragraf */
+}
+
+.about-text p:last-child {
+    margin-bottom: 0; /* biar paragraf terakhir gak ada jarak nempel ke bawah */
+}
+
+.highlight-blue {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
+.highlight-purple {
+    color: #a78bfa;
+    font-weight: 600;
+}
+
+.highlight-green {
+    color: #4ade80;
+    font-weight: 600;
+}
+
+.highlight-pink {
+    color: #f472b6;
+    font-weight: 600;
+}
+
+.highlight-gradient {
+    background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.highlightgradient {
+    background: linear-gradient(90deg, #3b82f6, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+
+.kotakpython {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 1.7rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kotakhtml {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 1.7rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kotakcss {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 1.7rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kotakjs {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 1.7rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kotakc {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 1.7rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kotakcplus {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 1.7rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
