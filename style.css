@@ -468,61 +468,55 @@ section {
 
 
 .kotakpython {
-    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
     margin-top: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .kotakhtml {
-    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
     margin-top: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .kotakcss {
-    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
     margin-top: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .kotakjs {
-    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
     margin-top: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .kotakc {
-    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
     margin-top: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .kotakcplus {
-    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 1.7rem;
+    padding: 0.3rem;
+    border-radius: 2rem;
     margin-top: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
