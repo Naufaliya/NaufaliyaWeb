@@ -48,10 +48,10 @@
 
 .kotakpython {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
-    border: 0.1px solid rgba(255, 255, 255, 0.1);
-    padding: 0.1rem;
-    border-radius: 0.1rem;
-    margin-top: 0.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 1.7rem;
+    margin-top: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 

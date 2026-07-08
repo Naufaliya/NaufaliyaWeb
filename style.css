@@ -468,6 +468,7 @@ section {
 
 
 .kotakpython {
+    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
@@ -477,6 +478,7 @@ section {
 }
 
 .kotakhtml {
+    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
@@ -486,6 +488,7 @@ section {
 }
 
 .kotakcss {
+    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
@@ -495,6 +498,7 @@ section {
 }
 
 .kotakjs {
+    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
@@ -504,6 +508,7 @@ section {
 }
 
 .kotakc {
+    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
@@ -513,10 +518,15 @@ section {
 }
 
 .kotakcplus {
+    display: inline-block;  /* <- tambahin baris ini */
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
     border-radius: 1.7rem;
     margin-top: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-text p {
+    line-height: 2.2;  /* naikin dari yang sekarang */
 }
