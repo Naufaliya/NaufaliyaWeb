@@ -54,3 +54,7 @@
     margin: 2rem auto;
 }
 
+.about-text p {
+    line-height: 1.9;  /* naikin dari yang sekarang */
+}
+
