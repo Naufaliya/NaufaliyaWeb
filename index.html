@@ -11,33 +11,6 @@
     <title>Portofolio Website</title>
 </head>
 
-<script>
-    let sections = document.querySelectorAll("section");
-    let sections = document.querySelectorAll("header nav ul li a");
-    // Gunakan selector yang tepat sesuai struktur HTML kamu
-    let navLinks = document.querySelectorAll("header nav ul li a");
-    
-    window.onscroll = () => {
-      sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150; // Jarak toleransi sebelum pindah active
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute("id");
-    
-        if(top >= offset && top < offset + height) {
-          navLinks.forEach(links => {
-            links.classList.remove("active");
-            // Mencari link yang href-nya mengandung ID section saat ini
-            let targetLink = document.querySelector("header nav ul li a[href*=" + id + "]");
-            if (targetLink) {
-                targetLink.classList.add("active");
-            }
-          });
-        }
-      });
-    };
-</script>
-
 <body>
     <header class="navbar">
         <div class="logo"> </div>
@@ -96,9 +69,9 @@
                     <h3>Portofolio Website</h3>
                     <p>Responsive portfolio</p>
                     <div class="tags">
-                        <span>UI/UX</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                        <span class="kotakpythonproject">HTML</span>
+                        <span class="kotakhtmlproject">CSS</span>
+                        <span class="kotakcssproject">JavaScript</span>
                     </div>
                 </div>
             </div>
@@ -172,11 +145,35 @@
 
 <script>
     var typed = new Typed(".auto-type", {
-        strings: ["Cats", "Marvel", "Navy Blue", "Movies", "Chainsmokers"],
+        strings: ["Cats", "Marvel", "Navy Blue", "Chainsmokers"],
         typeSpeed: 100, // Kecepatan ngetik
         backSpeed: 50,  // Kecepatan menghapus teks
         loop: true      // Mengulang terus menerus
     });
+</script>
+
+<script>
+    let sections = document.querySelectorAll("section");
+    let navLinksScroll = document.querySelectorAll("header nav ul li a");
+    // Gunakan selector yang tepat sesuai struktur HTML kamu
+    window.onscroll = () => {
+      sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+
+        if(top >= offset && top < offset + height) {
+          navLinksScroll.forEach(links => {
+            links.classList.remove("active");
+            let targetLink = document.querySelector("header nav ul li a[href*=" + id + "]");
+            if (targetLink) {
+                targetLink.classList.add("active");
+            }
+          });
+        }
+      });
+    };
 </script>
 
 </body>
