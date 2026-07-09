@@ -46,4 +46,11 @@
     margin-top: 3rem;
 }
 
+.home > .home-img {
+    display: none;
+}
+.mobile-only-img {
+    display: block;
+    margin: 2rem auto;
+}
 

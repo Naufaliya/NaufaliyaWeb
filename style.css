@@ -245,7 +245,7 @@ section {
 /* --- Responsive (Mobile) --- */
 @media (max-width: 995px) {
     .navbar { padding: 1.2rem 2rem; }
-    .home { flex-direction: column-reverse; text-align: center; gap: 4rem; }
+    .home { flex-direction: column; text-align: center; gap: 4rem; }
     .home-content h1 { font-size: 4rem; }
     .home-img img { width: 60vw; }
     .home-content p { margin: 0 auto; }
@@ -523,4 +523,8 @@ section {
 
 .about-text p {
     line-height: 2.6;  /* naikin dari yang sekarang */
+}
+
+.mobile-only-img {
+    display: none;
 }
