@@ -2,11 +2,11 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%; /* Ini kode kamu yang sudah ada */
+    font-size: 62.5%;
 }
-/* --- Reset & Base --- */
+
 :root {
-    --primary-color: #3b82f6; /* Blue Branding */
+    --primary-color: #3b82f6;
     --bg-dark: #000000;
     --card-bg: rgba(255, 255, 255, 0.05);
 }
@@ -23,7 +23,7 @@ html {
 }
 
 html {
-    font-size: 62.5%; /* 10px = 1rem */
+    font-size: 62.5%; 
     scroll-behavior: smooth;
 }
 
@@ -34,7 +34,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- Header & Navbar --- */
 .navbar {
     position: fixed;
     top: 2rem;
@@ -79,7 +78,6 @@ body {
     transition: 0.3s ease;
 }
 
-/* Efek Tombol Aktif (Biru) */
 .navbar ul li a:hover,
 .navbar ul li a.active {
     background: var(--primary-color);
@@ -87,15 +85,11 @@ body {
     box-shadow: 0 0 1.5rem var(--primary-color);
 }
 
-
-
-/* --- Section General --- */
 section {
     min-height: 100vh;
     padding: 10rem 9% 5rem;
 }
 
-/* --- Home Section --- */
 .home {
     background: radial-gradient(circle at top right, #02045d, #000);
 }
@@ -141,7 +135,6 @@ section {
     transform: scale(1.02);
 }
 
-/* --- Social Icons & Buttons --- */
 .social-icons {
     margin: 2.5rem 0;
 }
@@ -184,8 +177,6 @@ section {
     color: black;
     box-shadow: 0 0 2rem var(--primary-color);
 }
-
-/* --- Projects Section --- */
 
 .projects {
     background: radial-gradient(circle at top right, #02045d, #000);
@@ -242,7 +233,6 @@ section {
     line-height: 1.6;
 }
 
-/* --- Responsive (Mobile) --- */
 @media (max-width: 995px) {
     .navbar { padding: 1.2rem 2rem; }
     .home { flex-direction: column; text-align: center; gap: 4rem; }
@@ -250,36 +240,31 @@ section {
     .home-img img { width: 60vw; }
     .home-content p { margin: 0 auto; }
 }
-  
-/* Styling Khusus About */
 
 .about {
     background: radial-gradient(circle at top right, #02045d, #000);
 }
 
 .about-card {
-    background: rgba(255, 255, 255, 0.05); /* Putih tipis banget */
-    backdrop-filter: blur(10px); /* Efek blur kaca */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Garis tepi tipis */
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 4rem;
     border-radius: 3rem;
     margin-bottom: 4rem;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-
 .about-text {
     flex: 1;
 }
-
 
 .about-img img:hover {
     box-shadow: 10px 10px 0px var(--primary-color);
     transform: translateY(-5px);
 }
 
-/* Styling List Skill */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -297,28 +282,25 @@ section {
     font-weight: 500;
 }
 
-/* Responsif Mobile */
 @media (max-width: 995px) {
-    /* Ganti .about-container kamu dengan ini */
-.about-container {
-    display: block; /* Biar gak tabrakan sama kolom foto */
-    width: 100%;
-    max-width: 100rem; /* Biar kotak gak lebar banget sampe ujung layar */
-    margin: 0 auto;
-}
-
-/* Update .about-card biar lega */
-.about-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(1.5rem);
-    -webkit-backdrop-filter: blur(1.5rem);
-    border: 0.1rem solid rgba(255, 255, 255, 0.1);
-    padding: 5rem; /* Tambahin padding biar lega */
-    border-radius: 4rem;
-    width: 100%;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
-}
+    .about-container {
+        display: block;
+        width: 100%;
+        max-width: 100rem;
+        margin: 0 auto;
     }
+
+    .about-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(1.5rem);
+        -webkit-backdrop-filter: blur(1.5rem);
+        border: 0.1rem solid rgba(255, 255, 255, 0.1);
+        padding: 5rem;
+        border-radius: 4rem;
+        width: 100%;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+    }
+
     .about-img {
         justify-content: center;
         margin-top: 4rem;
@@ -329,40 +311,37 @@ section {
     .skills-list {
         justify-content: center;
     }
+}   
 
-/* Kita besarkan standarnya */
 .home-content h1 {
-    font-size: 7rem; /* Dari 5rem, biar beneran 'bold' */
-    line-height: 1.1;
+    font-size: 7rem;
 }
 
 .home-content p, 
 .about-text p {
-    font-size: 2.2rem; /* Dari 1.6rem, sekarang setara 22px */
+    font-size: 2.2rem;
     line-height: 1.8;
     color: #e0e0e0;
     margin-top: 2.5rem;
 }
 
 .about-text h2 {
-    font-size: 6rem; /* Judul About Me jadi lebih megah */
+    font-size: 6rem;
     font-weight: 700;
 }
 
-/* Ukuran Menu Navbar juga kita naikkan biar jelas */
 .navbar ul li a {
     font-size: 1.8rem; 
     padding: 1rem 2.5rem;
 }
 
 .auto-type {
-    color: var(--primary-color); /* Beri warna biru branding kamu */
+    color: var(--primary-color);
     font-weight: 700;
 }
 
-/* Mengatur gaya kursor ketikan */
 .typed-cursor {
-    font-size: 3.5rem; /* Sesuaikan dengan ukuran teks kamu */
+    font-size: 3.5rem;
     color: white;
     opacity: 1;
     animation: blink 0.7s infinite;
@@ -374,14 +353,12 @@ section {
     100% { opacity: 1; }
 }
 
-/* Judul Section */
-
 .spotify-wrapper {
-    margin: 3rem auto; /* Ini kunci buat naruh box-nya di tengah (atas-bawah 3rem, kiri-kanan auto) */
-    max-width: 900px;  /* Sesuaikan lebarnya biar pas sama grid kamu */
+    margin: 3rem auto;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ini buat naruh judul h3 ke tengah */
+    align-items: center;
     width: 100%;
 }
 
@@ -389,45 +366,41 @@ section {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    width: 100%; /* Biar dia menempati seluruh lebar wrapper */
+    width: 100%;
 }
 
-/* Biar kalau dibuka di HP gak maksa 2 kolom (nanti kekecilan) */
 @media (max-width: 768px) {
     .spotify-grid {
-        grid-template-columns: 1fr; /* Balik jadi 1 kolom kalau di HP */
+        grid-template-columns: 1fr;
     }
 }
 
-/* Untuk judul My Projects dan About Me */
 .heading, 
 #about h2 {
-    font-size: 4rem; /* Sesuaikan dengan ukuran 'I love' kamu */
+    font-size: 4rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-/* Untuk judul My Favorite Songs */
 .spotify-title {
-    font-size: 4rem !important; /* Samakan dengan About Me (6rem) */
+    font-size: 4rem !important;
     font-weight: 800;
     text-align: center;
-    margin-top: 8rem; /* Kasih jarak atas biar gak nempel kotak about */
+    margin-top: 8rem;
     margin-bottom: 4rem;
     color: white;
     display: block;
     width: 100%;
-    text-transform: none; /* Biar gak otomatis kapital kalau kamu gak mau */
+    text-transform: none;
 }
 
-
 .about-text p {
-    margin-bottom: 1.8rem; /* jarak antar paragraf */
+    margin-bottom: 1.8rem;
 }
 
 .about-text p:last-child {
-    margin-bottom: 0; /* biar paragraf terakhir gak ada jarak nempel ke bawah */
+    margin-bottom: 0;
 }
 
 .highlight-blue {
@@ -465,7 +438,6 @@ section {
     background-clip: text;
     font-weight: 700;
 }
-
 
 .kotakpython {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(167, 139, 250, 0.15));
@@ -521,8 +493,35 @@ section {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+.kotakhtmlproject {
+    background: linear-gradient(135deg, rgba(255, 247, 0, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kotakcssproject {
+    background: linear-gradient(135deg, rgba(255, 247, 0, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kotakjsproject {
+    background: linear-gradient(135deg, rgba(255, 247, 0, 0.15), rgba(167, 139, 250, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
 .about-text p {
-    line-height: 2;  /* naikin dari yang sekarang */
+    line-height: 2;
 }
 
 .mobile-only-img {
